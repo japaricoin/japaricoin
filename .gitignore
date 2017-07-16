@@ -113,3 +113,4 @@ contrib/devtools/split-debug.sh
 
 Thumbs.db
 *.sublime-*
+.tags*
