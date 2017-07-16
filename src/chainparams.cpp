@@ -50,7 +50,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+    const char* pszTimestamp = "Kemono Friends 16/Jul/2017 kemono ha itemo nokemono ha inai";
     const CScript genesisOutputScript = CScript() << ParseHex("046dd794a6db55982fcc93ed67e7e549ca20832e7091f7a154629f5fbe3546cee6562e0a9b65645a0a85fb91d4a145cd5d182cf8843144e3e0fa75431b0aea3be1") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
