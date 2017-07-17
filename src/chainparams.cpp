@@ -72,7 +72,7 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 350400;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf");
+        consensus.BIP34Hash = uint256S("00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184"); //genesis
         consensus.BIP65Height = 0; // genesis
         consensus.BIP66Height = 0; // genesis
         consensus.BIP68Height = 0;
@@ -106,7 +106,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000006805c7318ce2736c0");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1673fa904a93848eca83d5ca82c7af974511a7e640e22edc2976420744f2e56a"); //1155631
+        consensus.defaultAssumeValid = uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184"); //genesis
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -120,10 +120,10 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1500192489, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1500209665, 2950079689, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")); //genesis
+        assert(genesis.hashMerkleRoot == uint256S("0x78ead03c0be0d739c6e35433a0ee010d899f9dabc8ec251af11e4694f33ebe9b"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -150,7 +150,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256("0x001")),
+            ( 0, uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")) //genesis
         };
 
         chainTxData = ChainTxData{
@@ -173,7 +173,7 @@ public:
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 350400;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573");
+        consensus.BIP34Hash = uint256S("00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184"); //genesis
         consensus.BIP65Height = 0; // genesis
         consensus.BIP66Height = 0; // genesis
         consensus.BIP68Height = 0;
@@ -207,7 +207,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000054cb9e7a0");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x43a16a626ef2ffdbe928f2bc26dcd5475c6a1a04f9542dfc6a0a88e5fcf9bd4c"); //8711
+        consensus.defaultAssumeValid = uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184"); //genesis
 
         pchMessageStart[0] = 0x60;
         pchMessageStart[1] = 0x58;
@@ -216,10 +216,10 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1500192489, 293345, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1500209665, 2950079689, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")); //genesis
+        assert(genesis.hashMerkleRoot == uint256S("0x78ead03c0be0d739c6e35433a0ee010d899f9dabc8ec251af11e4694f33ebe9b"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -244,11 +244,11 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256("0x001")),
+            ( 0, uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")) //genesis
         };
 
         chainTxData = ChainTxData{
-            // Data as of block f2dc531da6be01f53774f970aaaca200c7a8317ee9fd398ee733b40f14e265d1 (height 8702)
+            // Data as of genesis block
             1500188071,
             0,
             0.01
@@ -306,10 +306,10 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1500192489, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1500209665, 2950079689, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")); //genesis
+        assert(genesis.hashMerkleRoot == uint256S("0x78ead03c0be0d739c6e35433a0ee010d899f9dabc8ec251af11e4694f33ebe9b"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -321,7 +321,7 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256("0x001"))
+            ( 0, uint256S("0x00000000dae4f9f71869cee017e6530f2fab13074480002f03cdd2664575b184")) //genesis
         };
 
         chainTxData = ChainTxData{
