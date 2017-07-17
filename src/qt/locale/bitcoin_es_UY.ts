@@ -110,16 +110,16 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Enviar monedas a una dirección Japaricoin</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Enviar monedas a una dirección Servalcoin</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>

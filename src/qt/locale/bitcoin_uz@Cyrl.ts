@@ -146,8 +146,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Тангаларни Japaricoin манзилига жўнатиш</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Тангаларни Servalcoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -198,12 +198,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Japaricoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Servalcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Хабарларни махсус Japaricoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Хабарларни махсус Servalcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -222,8 +222,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and japaricoin: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва japaricoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and servalcoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва servalcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -234,16 +234,16 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a japaricoin: URI or payment request</source>
-        <translation>Japaricoin’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a servalcoin: URI or payment request</source>
+        <translation>Servalcoin’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Japaricoin network</source>
-        <translation><numerusform>%n та Japaricoin тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to Servalcoin network</source>
+        <translation><numerusform>%n та Servalcoin тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -601,8 +601,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Japaricoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Japaricoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Servalcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Servalcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -682,8 +682,8 @@
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a Japaricoin address (e.g. %1)</source>
-        <translation>Japaricoin манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Servalcoin address (e.g. %1)</source>
+        <translation>Servalcoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -1208,8 +1208,8 @@
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Japaricoin Core</translation>
+        <source>Servalcoin Core</source>
+        <translation>Servalcoin Core</translation>
     </message>
     <message>
         <source>Connection options:</source>

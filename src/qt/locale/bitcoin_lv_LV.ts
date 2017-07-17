@@ -142,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Nosūtīt bitkoinus uz Japaricoin adresi</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Nosūtīt bitkoinus uz Servalcoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Japaricoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Servalcoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Japaricoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Servalcoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and japaricoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un japaricoin: URIs)</translation>
+        <source>Request payments (generates QR codes and servalcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un servalcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a japaricoin: URI or payment request</source>
-        <translation>Atvērt japaricoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a servalcoin: URI or payment request</source>
+        <translation>Atvērt servalcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -499,15 +499,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt japaricoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt servalcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Japaricoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Japaricoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Servalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Servalcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -559,7 +559,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Japaricoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Servalcoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -593,8 +593,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Japaricoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Japaricoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Servalcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Servalcoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -852,7 +852,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Japaricoin Kontroles Funkcijas</translation>
+        <translation>Servalcoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1027,8 +1027,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Japaricoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Japaricoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Servalcoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Servalcoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1124,8 +1124,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Japaricoin Core</translation>
+        <source>Servalcoin Core</source>
+        <translation>Servalcoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

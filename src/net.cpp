@@ -1466,7 +1466,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Japaricoin " + FormatFullVersion();
+        std::string strDesc = "Servalcoin " + FormatFullVersion();
 
         try {
             while (true) {

@@ -1,10 +1,10 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to japaricoin-core.
+This issue tracker is only for technical issues related to servalcoin-core.
 
-General japaricoin questions and/or support requests and are best directed to the [litecointalk.io forums](https://litecointalk.io/).
+General servalcoin questions and/or support requests and are best directed to the [litecointalk.io forums](https://litecointalk.io/).
 
-For reporting security issues, please contact the Japaricoin developers on the #japaricoin-dev Freenode IRC channel or alternatively you can email us at contact@japaricoin.org.
+For reporting security issues, please contact the Servalcoin developers on the #servalcoin-dev Freenode IRC channel or alternatively you can email us at contact@servalcoin.org.
 
 ### Describe the issue
 
@@ -23,7 +23,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of japaricoin-core are you using?
+### What version of servalcoin-core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Japaricoin"
-            VALUE "FileDescription",    "japaricoind (Japaricoin node with a JSON-RPC server)"
+            VALUE "CompanyName",        "Servalcoin"
+            VALUE "FileDescription",    "servalcoind (Servalcoin node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "japaricoind"
+            VALUE "InternalName",       "servalcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "japaricoind.exe"
-            VALUE "ProductName",        "japaricoind"
+            VALUE "OriginalFilename",   "servalcoind.exe"
+            VALUE "ProductName",        "servalcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

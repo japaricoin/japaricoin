@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.japaricoin.Japaricoin-Qt";
+        return @"org.servalcoin.Servalcoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

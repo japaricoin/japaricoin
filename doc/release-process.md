@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/japaricoin/japaricoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/servalcoin/servalcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -31,12 +31,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/japaricoin/gitian.sigs.ltc.git
-    git clone https://github.com/japaricoin/japaricoin-detached-sigs.git
+    git clone https://github.com/servalcoin/gitian.sigs.ltc.git
+    git clone https://github.com/servalcoin/servalcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/japaricoin/japaricoin.git
+    git clone https://github.com/servalcoin/servalcoin.git
 
-### Japaricoin maintainers/release engineers, update version in sources
+### Servalcoin maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -75,7 +75,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./japaricoin
+    pushd ./servalcoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -109,7 +109,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../japaricoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../servalcoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -117,50 +117,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url japaricoin=/path/to/japaricoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url servalcoin=/path/to/servalcoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Japaricoin Core for Linux, Windows, and OS X:
+### Build and sign Servalcoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit japaricoin=v${VERSION} ../japaricoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../japaricoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/japaricoin-*.tar.gz build/out/src/japaricoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit servalcoin=v${VERSION} ../servalcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../servalcoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/servalcoin-*.tar.gz build/out/src/servalcoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit japaricoin=v${VERSION} ../japaricoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../japaricoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/japaricoin-*-win-unsigned.tar.gz inputs/japaricoin-win-unsigned.tar.gz
-    mv build/out/japaricoin-*.zip build/out/japaricoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit servalcoin=v${VERSION} ../servalcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../servalcoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/servalcoin-*-win-unsigned.tar.gz inputs/servalcoin-win-unsigned.tar.gz
+    mv build/out/servalcoin-*.zip build/out/servalcoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit japaricoin=v${VERSION} ../japaricoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../japaricoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/japaricoin-*-osx-unsigned.tar.gz inputs/japaricoin-osx-unsigned.tar.gz
-    mv build/out/japaricoin-*.tar.gz build/out/japaricoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit servalcoin=v${VERSION} ../servalcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../servalcoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/servalcoin-*-osx-unsigned.tar.gz inputs/servalcoin-osx-unsigned.tar.gz
+    mv build/out/servalcoin-*.tar.gz build/out/servalcoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`japaricoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`japaricoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`japaricoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `japaricoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`japaricoin-${VERSION}-osx-unsigned.dmg`, `japaricoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`servalcoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`servalcoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`servalcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `servalcoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`servalcoin-${VERSION}-osx-unsigned.dmg`, `servalcoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import japaricoin/contrib/gitian-keys/*.pgp
+    gpg --import servalcoin/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../japaricoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../japaricoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../japaricoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../servalcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../servalcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../servalcoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -178,25 +178,25 @@ Commit your signature to gitian.sigs.ltc:
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [japaricoin-detached-sigs](https://github.com/japaricoin-project/japaricoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [servalcoin-detached-sigs](https://github.com/servalcoin-project/servalcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../japaricoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../japaricoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../japaricoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/japaricoin-osx-signed.dmg ../japaricoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../servalcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../servalcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../servalcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/servalcoin-osx-signed.dmg ../servalcoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../japaricoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../japaricoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../japaricoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/japaricoin-*win64-setup.exe ../japaricoin-${VERSION}-win64-setup.exe
-    mv build/out/japaricoin-*win32-setup.exe ../japaricoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../servalcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../servalcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../servalcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/servalcoin-*win64-setup.exe ../servalcoin-${VERSION}-win64-setup.exe
+    mv build/out/servalcoin-*win32-setup.exe ../servalcoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -218,23 +218,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-japaricoin-${VERSION}-aarch64-linux-gnu.tar.gz
-japaricoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-japaricoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-japaricoin-${VERSION}-x86_64-linux-gnu.tar.gz
-japaricoin-${VERSION}-osx64.tar.gz
-japaricoin-${VERSION}-osx.dmg
-japaricoin-${VERSION}.tar.gz
-japaricoin-${VERSION}-win32-setup.exe
-japaricoin-${VERSION}-win32.zip
-japaricoin-${VERSION}-win64-setup.exe
-japaricoin-${VERSION}-win64.zip
+servalcoin-${VERSION}-aarch64-linux-gnu.tar.gz
+servalcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+servalcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+servalcoin-${VERSION}-x86_64-linux-gnu.tar.gz
+servalcoin-${VERSION}-osx64.tar.gz
+servalcoin-${VERSION}-osx.dmg
+servalcoin-${VERSION}.tar.gz
+servalcoin-${VERSION}-win32-setup.exe
+servalcoin-${VERSION}-win32.zip
+servalcoin-${VERSION}-win64-setup.exe
+servalcoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the japaricoin.org server, nor put them in the torrent*.
+space *do not upload these to the servalcoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -244,24 +244,24 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the japaricoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the servalcoin.org server.
 
 ```
 
-- Update japaricoin.org version
+- Update servalcoin.org version
 
 - Announce the release:
 
-  - japaricoin-dev and japaricoin-dev mailing list
+  - servalcoin-dev and servalcoin-dev mailing list
 
-  - blog.japaricoin.org blog post
+  - blog.servalcoin.org blog post
 
-  - Update title of #japaricoin and #japaricoin-dev on Freenode IRC
+  - Update title of #servalcoin and #servalcoin-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Japaricoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Servalcoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/japaricoin/japaricoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/servalcoin/servalcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

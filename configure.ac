@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, false)
 define(_COPYRIGHT_YEAR, 2017)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Japaricoin Core]])
-AC_INIT([Japaricoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/japaricoin/japaricoin/issues],[japaricoin],[https://japaricoin.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Servalcoin Core]])
+AC_INIT([Servalcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/servalcoin/servalcoin/issues],[servalcoin],[https://servalcoin.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=japaricoind
-BITCOIN_GUI_NAME=japaricoin-qt
-BITCOIN_CLI_NAME=japaricoin-cli
-BITCOIN_TX_NAME=japaricoin-tx
+BITCOIN_DAEMON_NAME=servalcoind
+BITCOIN_GUI_NAME=servalcoin-qt
+BITCOIN_CLI_NAME=servalcoin-cli
+BITCOIN_TX_NAME=servalcoin-tx
 
 AC_CANONICAL_HOST
 
@@ -916,11 +916,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build japaricoind])
+AC_MSG_CHECKING([whether to build servalcoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (japaricoin-cli japaricoin-tx)])
+AC_MSG_CHECKING([whether to build utils (servalcoin-cli servalcoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1021,7 +1021,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_japaricoin-qt])
+  AC_MSG_CHECKING([whether to build test_servalcoin-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1032,7 +1032,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_japaricoin])
+AC_MSG_CHECKING([whether to build test_servalcoin])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

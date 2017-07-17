@@ -1,41 +1,41 @@
-Japaricoin Core 0.14.2
+Servalcoin Core 0.14.2
 =====================
 
 Setup
 ---------------------
-Japaricoin Core is the original Japaricoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Japaricoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Servalcoin Core is the original Servalcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Servalcoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Japaricoin Core, visit [japaricoin.org](https://japaricoin.org).
+To download Servalcoin Core, visit [servalcoin.org](https://servalcoin.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Japaricoin on your native platform.
+The following are some helpful notes on how to run Servalcoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/japaricoin-qt` (GUI) or
-- `bin/japaricoind` (headless)
+- `bin/servalcoin-qt` (GUI) or
+- `bin/servalcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run japaricoin-qt.exe.
+Unpack the files into a directory, and then run servalcoin-qt.exe.
 
 ### OS X
 
-Drag Japaricoin-Core to your applications folder, and then run Japaricoin-Core.
+Drag Servalcoin-Core to your applications folder, and then run Servalcoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Japaricoin Wiki](https://wiki.japaricoin.org/)
+* See the documentation at the [Servalcoin Wiki](https://wiki.servalcoin.org/)
 for help and more information.
-* Ask for help on [#japaricoin](http://webchat.freenode.net?channels=japaricoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=japaricoin).
-* Ask for help on the [JaparicoinTalk](https://japaricointalk.io/) forums.
+* Ask for help on [#servalcoin](http://webchat.freenode.net?channels=servalcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=servalcoin).
+* Ask for help on the [ServalcoinTalk](https://servalcointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Japaricoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Servalcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Japaricoin on your native plat
 
 Development
 ---------------------
-The Japaricoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Servalcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/japaricoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/servalcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Japaricoin repo's [root README](/README.md) contains relevant information on
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [JaparicoinTalk](https://japaricointalk.io/) forums.
-* Discuss general Japaricoin development on #japaricoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=japaricoin-dev).
+* Discuss on the [ServalcoinTalk](https://servalcointalk.io/) forums.
+* Discuss general Servalcoin development on #servalcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=servalcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

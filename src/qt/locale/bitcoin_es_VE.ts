@@ -114,8 +114,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Enviar monedas a una dirección Japaricoin</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Enviar monedas a una dirección Servalcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +130,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +158,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Japaricoin para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones Servalcoin para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Japaricoin especificas</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Servalcoin especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -608,8 +608,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Japaricoin Core</translation>
+        <source>Servalcoin Core</source>
+        <translation>Servalcoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

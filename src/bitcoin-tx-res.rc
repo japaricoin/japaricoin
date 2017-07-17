@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Japaricoin"
-            VALUE "FileDescription",    "japaricoin-tx (CLI Japaricoin transaction editor utility)"
+            VALUE "CompanyName",        "Servalcoin"
+            VALUE "FileDescription",    "servalcoin-tx (CLI Servalcoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "japaricoin-tx"
+            VALUE "InternalName",       "servalcoin-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "japaricoin-tx.exe"
-            VALUE "ProductName",        "japaricoin-tx"
+            VALUE "OriginalFilename",   "servalcoin-tx.exe"
+            VALUE "ProductName",        "servalcoin-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

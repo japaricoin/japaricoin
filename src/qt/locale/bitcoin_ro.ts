@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Trimite monedele către o adresă Japaricoin</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Trimite monedele către o adresă Servalcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Japaricoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Servalcoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Japaricoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Servalcoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and japaricoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și japaricoin: URIs)</translation>
+        <source>Request payments (generates QR codes and servalcoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și servalcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a japaricoin: URI or payment request</source>
-        <translation>Deschide un japaricoin: URI sau cerere de plată</translation>
+        <source>Open a servalcoin: URI or payment request</source>
+        <translation>Deschide un servalcoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Japaricoin Core</translation>
+        <source>Servalcoin Core</source>
+        <translation>Servalcoin Core</translation>
     </message>
     <message>
         <source>Information</source>

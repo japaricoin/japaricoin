@@ -62,12 +62,12 @@
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Japaricoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Servalcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Japaricoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Japaricoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your Servalcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите Servalcoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -318,7 +318,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
+        <source>Send coins to a Servalcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -342,7 +342,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
+        <source>Servalcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -370,12 +370,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Japaricoin адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Servalcoin адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Japaricoin адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Servalcoin адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -394,8 +394,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and japaricoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Japaricoin: URIs)</translation>
+        <source>Request payments (generates QR codes and servalcoin: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и Servalcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a japaricoin: URI or payment request</source>
-        <translation>Отворете Japaricoin: URI  или заявка за плащане</translation>
+        <source>Open a servalcoin: URI or payment request</source>
+        <translation>Отворете Servalcoin: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -450,8 +450,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Japaricoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Japaricoin команди</translation>
+        <source>Show the %1 help message to get a list with possible Servalcoin command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Servalcoin команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -690,7 +690,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Japaricoin address.</source>
+        <source>The entered address "%1" is not a valid Servalcoin address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -904,16 +904,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Japaricoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Japaricoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Servalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Servalcoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Japaricoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Japaricoin мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the Servalcoin network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Servalcoin мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1007,7 +1007,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Japaricoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Servalcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1062,8 +1062,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start japaricoin: click-to-pay handler</source>
-        <translation>Japaricoin не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start servalcoin: click-to-pay handler</source>
+        <translation>Servalcoin не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1136,8 +1136,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Japaricoin address (e.g. %1)</source>
-        <translation>Въведете Japaricoin адрес (например: %1)</translation>
+        <source>Enter a Servalcoin address (e.g. %1)</source>
+        <translation>Въведете Servalcoin адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1689,8 +1689,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Japaricoin address</source>
-        <translation>Внимание: Невалиден Japaricoin адрес</translation>
+        <source>Warning: Invalid Servalcoin address</source>
+        <translation>Внимание: Невалиден Servalcoin адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1809,7 +1809,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Japaricoin address</source>
+        <source>Sign the message to prove you own this Servalcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1825,7 +1825,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Japaricoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Servalcoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2346,8 +2346,8 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Japaricoin ядро</translation>
+        <source>Servalcoin Core</source>
+        <translation>Servalcoin ядро</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

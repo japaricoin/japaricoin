@@ -1,42 +1,42 @@
-Japaricoin Core integration/staging tree
+Servalcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/japaricoin/japaricoin.svg?branch=master)](https://travis-ci.org/japaricoin/japaricoin)
+[![Build Status](https://travis-ci.org/servalcoin/servalcoin.svg?branch=master)](https://travis-ci.org/servalcoin/servalcoin)
 
-https://japaricoin.org
+https://servalcoin.org
 
-What is Japaricoin?
+What is Servalcoin?
 ----------------
 
-Japaricoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Japaricoin uses peer-to-peer technology to operate
+Servalcoin is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Servalcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Japaricoin Core is the name of open source
+out collectively by the network. Servalcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Japaricoin Core software, see [https://japaricoin.org](https://japaricoin.org).
+the Servalcoin Core software, see [https://servalcoin.org](https://servalcoin.org).
 
 License
 -------
 
-Japaricoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Servalcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/japaricoin/japaricoin/tags) are created
-regularly to indicate new official, stable release versions of Japaricoin Core.
+completely stable. [Tags](https://github.com/servalcoin/servalcoin/tags) are created
+regularly to indicate new official, stable release versions of Servalcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/japaricoin-dev)
+The developer [mailing list](https://groups.google.com/forum/#!forum/servalcoin-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #japaricoin-dev.
+Developer IRC can be found on Freenode at #servalcoin-dev.
 
 Testing
 -------
@@ -70,7 +70,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Japaricoin periodically.
+Translations are converted to Servalcoin periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

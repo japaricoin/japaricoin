@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += japaricoind
+  bin_PROGRAMS += servalcoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += japaricoin-cli japaricoin-tx
+  bin_PROGRAMS += servalcoin-cli servalcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -353,16 +353,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-japaricoind_SOURCES = bitcoind.cpp
-japaricoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-japaricoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-japaricoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+servalcoind_SOURCES = bitcoind.cpp
+servalcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+servalcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+servalcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-japaricoind_SOURCES += bitcoind-res.rc
+servalcoind_SOURCES += bitcoind-res.rc
 endif
 
-japaricoind_LDADD = \
+servalcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -375,38 +375,38 @@ japaricoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-japaricoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+servalcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-japaricoin_cli_SOURCES = bitcoin-cli.cpp
-japaricoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-japaricoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-japaricoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+servalcoin_cli_SOURCES = bitcoin-cli.cpp
+servalcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+servalcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+servalcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-japaricoin_cli_SOURCES += bitcoin-cli-res.rc
+servalcoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-japaricoin_cli_LDADD = \
+servalcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-japaricoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+servalcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-japaricoin_tx_SOURCES = bitcoin-tx.cpp
-japaricoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-japaricoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-japaricoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+servalcoin_tx_SOURCES = bitcoin-tx.cpp
+servalcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+servalcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+servalcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-japaricoin_tx_SOURCES += bitcoin-tx-res.rc
+servalcoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-japaricoin_tx_LDADD = \
+servalcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -414,7 +414,7 @@ japaricoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-japaricoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+servalcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

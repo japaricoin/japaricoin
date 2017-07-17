@@ -4,10 +4,10 @@ TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
 SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$SRCDIR/japaricoind}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/japaricoin-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/japaricoin-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/japaricoin-qt}
+BITCOIND=${BITCOIND:-$SRCDIR/servalcoind}
+BITCOINCLI=${BITCOINCLI:-$SRCDIR/servalcoin-cli}
+BITCOINTX=${BITCOINTX:-$SRCDIR/servalcoin-tx}
+BITCOINQT=${BITCOINQT:-$SRCDIR/qt/servalcoin-qt}
 
 [ ! -x $BITCOIND ] && echo "$JAPARICOIND not found or not executable." && exit 1
 

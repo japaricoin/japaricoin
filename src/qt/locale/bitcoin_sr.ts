@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Пошаљите новац на japaricoin адресу</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Пошаљите новац на servalcoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

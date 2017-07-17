@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Japaricoin address</source>
-        <translation>Enviar monedas a una dirección Japaricoin</translation>
+        <source>Send coins to a Servalcoin address</source>
+        <translation>Enviar monedas a una dirección Servalcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Japaricoin</source>
-        <translation>Japaricoin</translation>
+        <source>Servalcoin</source>
+        <translation>Servalcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Japaricoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Japaricoin para demostrar la propiedad</translation>
+        <source>Sign messages with your Servalcoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Servalcoin para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Japaricoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Japaricoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified Servalcoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Servalcoin concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and japaricoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Japaricoin)</translation>
+        <source>Request payments (generates QR codes and servalcoin: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de Servalcoin)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a japaricoin: URI or payment request</source>
-        <translation>Abrir un japaricoin: URI o petición de pago</translation>
+        <source>Open a servalcoin: URI or payment request</source>
+        <translation>Abrir un servalcoin: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Japaricoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Japaricoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the Servalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Servalcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Japaricoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Japaricoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Servalcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Servalcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Japaricoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Japaricoin</translation>
+        <source>Sign the message to prove you own this Servalcoin address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Servalcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Japaricoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Japaricoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified Servalcoin address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Servalcoin indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Japaricoin Core</source>
-        <translation>Núcleo de Japaricoin</translation>
+        <source>Servalcoin Core</source>
+        <translation>Núcleo de Servalcoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

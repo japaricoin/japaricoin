@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || IsArgSet("-?") || IsArgSet("-h") || IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s japaricoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s servalcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  japaricoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded japaricoin transaction") + "\n" +
-              "  japaricoin-tx [options] -create [commands]   " + _("Create hex-encoded japaricoin transaction") + "\n" +
+              "  servalcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded servalcoin transaction") + "\n" +
+              "  servalcoin-tx [options] -create [commands]   " + _("Create hex-encoded servalcoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

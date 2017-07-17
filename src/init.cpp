@@ -506,8 +506,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/japaricoin/japaricoin>";
-    const std::string URL_WEBSITE = "<https://japaricoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/servalcoin/servalcoin>";
+    const std::string URL_WEBSITE = "<https://servalcoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -788,7 +788,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Japaricoin version %s\n", FormatFullVersion());
+    LogPrintf("Servalcoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

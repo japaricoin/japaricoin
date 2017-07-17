@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Japaricoin tests.
+Utilities to generate test vectors for the data-driven Servalcoin tests.
 
 Usage: 
 
