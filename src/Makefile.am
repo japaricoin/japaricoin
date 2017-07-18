@@ -172,8 +172,8 @@ obj/build.h: FORCE
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
-libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS) -fPIC
+libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -fPIC
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
   addrdb.cpp \
@@ -291,7 +291,26 @@ libbitcoin_consensus_a_SOURCES = \
   uint256.h \
   utilstrencodings.cpp \
   utilstrencodings.h \
-  version.h
+  version.h \
+  Lyra2RE/Lyra2.c \
+  Lyra2RE/Lyra2RE.c \
+  Lyra2RE/Sponge.c \
+  Lyra2RE/blake.c \
+  Lyra2RE/skein.c \
+  Lyra2RE/groestl.c \
+  Lyra2RE/keccak.c \
+  Lyra2RE/cubehash.c \
+  Lyra2RE/bmw.c \
+  Lyra2RE/Lyra2.h \
+  Lyra2RE/Lyra2RE.h \
+  Lyra2RE/Sponge.h \
+  Lyra2RE/sph_blake.h \
+  Lyra2RE/sph_groestl.h \
+  Lyra2RE/sph_keccak.h \
+  Lyra2RE/sph_skein.h \
+  Lyra2RE/sph_types.h \
+  Lyra2RE/sph_cubehash.h \
+  Lyra2RE/sph_bmw.h
 
 # common: shared between bitcoind, and bitcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
