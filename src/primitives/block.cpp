@@ -9,7 +9,8 @@
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "crypto/common.h"
-#include "crypto/scrypt.h"
+// #include "crypto/scrypt.h"
+#include "Lyra2RE/Lyra2RE.h"
 
 uint256 CBlockHeader::GetHash() const
 {
@@ -19,7 +20,8 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetPoWHash() const
 {
     uint256 thash;
-    scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
+    lyra2re2_hash(BEGIN(nVersion), BEGIN(thash));
+    // scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
     return thash;
 }
 

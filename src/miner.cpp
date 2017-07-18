@@ -13,7 +13,7 @@
 #include "consensus/merkle.h"
 #include "consensus/validation.h"
 #include "hash.h"
-#include "crypto/scrypt.h"
+// #include "crypto/scrypt.h"
 #include "validation.h"
 #include "net.h"
 #include "policy/policy.h"
@@ -25,6 +25,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
+#include "Lyra2RE/Lyra2RE.h"
 
 #include <algorithm>
 #include <boost/thread.hpp>
