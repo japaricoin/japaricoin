@@ -113,7 +113,7 @@ public:
         pchMessageStart[1] = 0x38;
         pchMessageStart[2] = 0x4d;
         pchMessageStart[3] = 0xa4;
-        nDefaultPort = 9333;
+        nDefaultPort = 9528;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1500209665, 2950079689, 0x1e0ffff0, 1, 50 * COIN);
@@ -130,9 +130,9 @@ public:
         //vSeeds.push_back(CDNSSeedData("servalcoinpool.org", "dnsseed.servalcoinpool.org"));
         //vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,43); //アドレスはJから始まる
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63); //アドレスはSから始まる
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,70); // V
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x0A)(0xB3)(0xBF)(0x11).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x0A)(0x81)(0xA6)(0xB4).convert_to_container<std::vector<unsigned char> >();
@@ -205,7 +205,7 @@ public:
         pchMessageStart[1] = 0x58;
         pchMessageStart[2] = 0x19;
         pchMessageStart[3] = 0xdc;
-        nDefaultPort = 19335;
+        nDefaultPort = 19530;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1500209665, 2950079689, 0x1e0ffff0, 1, 50 * COIN);
@@ -291,7 +291,7 @@ public:
         pchMessageStart[1] = 0x76;
         pchMessageStart[2] = 0x08;
         pchMessageStart[3] = 0x90;
-        nDefaultPort = 19444;
+        nDefaultPort = 19555;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1500209665, 2950079689, 0x207fffff, 1, 50 * COIN);
