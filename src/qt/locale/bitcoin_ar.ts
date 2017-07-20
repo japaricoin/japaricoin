@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Servalcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>هذه هي عناوين Litecion التابعة لك من أجل إستقبال الدفعات. ينصح استخدام عنوان جديد من أجل كل صفقة</translation>
+        <translation>هذه هي عناوين Servalcoin التابعة لك من أجل إستقبال الدفعات. ينصح استخدام عنوان جديد من أجل كل صفقة</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
