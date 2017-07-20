@@ -633,7 +633,7 @@
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>&amp;Tietokannan välimuistin koko</translation>
+        <translation>&amp;Tiefriendnnan välimuistin koko</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1811,7 +1811,7 @@
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>Lohkotietokanta sisältää lohkon, joka vaikuttaa olevan tulevaisuudesta. Tämä saattaa johtua tietokoneesi virheellisesti asetetuista aika-asetuksista. Rakenna lohkotietokanta uudelleen vain jos olet varma, että tietokoneesi päivämäärä ja aika ovat oikein.</translation>
+        <translation>Lohkotiefriendnta sisältää lohkon, joka vaikuttaa olevan tulevaisuudesta. Tämä saattaa johtua tietokoneesi virheellisesti asetetuista aika-asetuksista. Rakenna lohkotiefriendnta uudelleen vain jos olet varma, että tietokoneesi päivämäärä ja aika ovat oikein.</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
@@ -1819,7 +1819,7 @@
     </message>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>Sinun tulee uudelleenrakentaa tietokanta käyttäen -reindex-chainstate vaihtaaksesi -txindex</translation>
+        <translation>Sinun tulee uudelleenrakentaa tiefriendnta käyttäen -reindex-chainstate vaihtaaksesi -txindex</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -1855,7 +1855,7 @@
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation>Vioittunut lohkotietokanta havaittu</translation>
+        <translation>Vioittunut lohkotiefriendnta havaittu</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -1867,7 +1867,7 @@
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Haluatko uudelleenrakentaa lohkotietokannan nyt?</translation>
+        <translation>Haluatko uudelleenrakentaa lohkotiefriendnnan nyt?</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -1875,11 +1875,11 @@
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Virhe alustaessa lohkotietokantaa</translation>
+        <translation>Virhe alustaessa lohkotiefriendntaa</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Virhe alustaessa lompakon tietokantaympäristöä %s!</translation>
+        <translation>Virhe alustaessa lompakon tiefriendntaympäristöä %s!</translation>
     </message>
     <message>
         <source>Error loading %s</source>
@@ -1959,7 +1959,7 @@
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Aseta tietokannan välimuistin koko megatavuissa (%d - %d, oletus: %d</translation>
+        <translation>Aseta tiefriendnnan välimuistin koko megatavuissa (%d - %d, oletus: %d</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
@@ -2051,7 +2051,7 @@
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation>Virheitä tietokantaa luettaessa, ohjelma pysäytetään.</translation>
+        <translation>Virheitä tiefriendntaa luettaessa, ohjelma pysäytetään.</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file on startup</source>

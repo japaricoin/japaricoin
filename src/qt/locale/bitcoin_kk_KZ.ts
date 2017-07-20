@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>Servalcoin</source>
-        <translation>Биткоин</translation>
+        <translation>Сервалкоин</translation>
     </message>
     <message>
         <source>Wallet</source>

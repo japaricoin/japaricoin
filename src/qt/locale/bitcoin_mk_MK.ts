@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Send coins to a Servalcoin address</source>
-        <translation>Испрати биткоини на Биткоин адреса</translation>
+        <translation>Испрати сервалкоини на Сервалкоин адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Servalcoin</source>
-        <translation>Биткоин</translation>
+        <translation>Сервалкоин</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -579,7 +579,7 @@
     </message>
     <message>
         <source>Servalcoin Core</source>
-        <translation>Биткоин Core</translation>
+        <translation>Сервалкоин Core</translation>
     </message>
     <message>
         <source>Warning</source>
