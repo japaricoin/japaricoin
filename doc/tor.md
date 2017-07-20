@@ -1,4 +1,4 @@
-TOR SUPPORT IN JAPARICOIN
+TOR SUPPORT IN SERVALCOIN
 ======================
 
 It is possible to run Servalcoin as a Tor hidden service, and connect to such services.
