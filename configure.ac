@@ -90,6 +90,9 @@ AC_PATH_TOOL(OBJCOPY, objcopy)
 
 AC_ARG_VAR(PYTHONPATH, Augments the default search path for python module files)
 
+CXXFLAGS="-fPIC $CXXFLAGS"
+CFLAGS="-fPIC $CFLAGS"
+
 # Enable wallet
 AC_ARG_ENABLE([wallet],
   [AS_HELP_STRING([--disable-wallet],
@@ -865,6 +868,7 @@ AC_CHECK_DECLS([EVP_MD_CTX_new],,,[AC_INCLUDES_DEFAULT
 #include <openssl/x509_vfy.h>
 ])
 CXXFLAGS="${save_CXXFLAGS}"
+CXXFLAGS="-fPIC $CXXFLAGS"
 
 dnl univalue check
 
