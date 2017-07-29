@@ -169,7 +169,7 @@ public:
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 1484067;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4"); //genesis
+        consensus.BIP34Hash = uint256S("00000000e985993d5a123703d4de0c21d628a3f6ae142849d555e92f4135a35d"); //genesis
         consensus.BIP65Height = 0; // genesis
         consensus.BIP66Height = 0; // genesis
         consensus.CsvHeight = 0;
@@ -199,7 +199,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000054cb9e7a0");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4"); //genesis
+        consensus.defaultAssumeValid = uint256S("0x00000000e985993d5a123703d4de0c21d628a3f6ae142849d555e92f4135a35d"); //genesis
 
         pchMessageStart[0] = 0x60;
         pchMessageStart[1] = 0x58;
@@ -210,8 +210,8 @@ public:
 
         genesis = CreateGenesisBlock(1500818667, 436564000, 486604799, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4")); //genesis
-        assert(genesis.hashMerkleRoot == uint256S("0x8788847fe5747b9c4e05d45a893978f9ff07e578b9240955e85f2e4fae97f61b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000e985993d5a123703d4de0c21d628a3f6ae142849d555e92f4135a35d")); //genesis
+        assert(genesis.hashMerkleRoot == uint256S("0x4818445f1c4fffb9240ddc38a04b126c94a050fe22c7bfcfccedf3bd96ae4e8f"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -236,7 +236,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4")) //genesis
+            ( 0, uint256S("0x00000000e985993d5a123703d4de0c21d628a3f6ae142849d555e92f4135a35d")) //genesis
         };
 
         chainTxData = ChainTxData{
