@@ -70,7 +70,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 350400;
+        consensus.nSubsidyHalvingInterval = 1484067;
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4"); //genesis
         consensus.BIP65Height = 0; // genesis
@@ -167,7 +167,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 350400;
+        consensus.nSubsidyHalvingInterval = 1484067;
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4"); //genesis
         consensus.BIP65Height = 0; // genesis
