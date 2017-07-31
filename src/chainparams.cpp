@@ -285,7 +285,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4"); // genesis
+        consensus.defaultAssumeValid = uint256S("0x0000000097b0fc7ad03c590a3ff5a0fe9688fc0e7610fe69dde868b508eac1c7"); // genesis
 
         pchMessageStart[0] = 0x70;
         pchMessageStart[1] = 0x76;
@@ -294,10 +294,10 @@ public:
         nDefaultPort = 19555;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1500818667, 436564000, 486604799, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1501299453, 1871817047, 486604799, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4")); //genesis
-        assert(genesis.hashMerkleRoot == uint256S("0x8788847fe5747b9c4e05d45a893978f9ff07e578b9240955e85f2e4fae97f61b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000000097b0fc7ad03c590a3ff5a0fe9688fc0e7610fe69dde868b508eac1c7")); //genesis
+        assert(genesis.hashMerkleRoot == uint256S("0xfecf9677be8f0c2fcb9e4396efe143e43c70591db825d0a719f199c7f03e3b1b"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -309,7 +309,7 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000000daef219f434e4a4eff5b5d8a4806e23499e897104891b0fb226c8bd4")) //genesis
+            ( 0, uint256S("0x0000000097b0fc7ad03c590a3ff5a0fe9688fc0e7610fe69dde868b508eac1c7")) //genesis
         };
 
         chainTxData = ChainTxData{
